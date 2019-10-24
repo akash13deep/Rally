@@ -25,6 +25,9 @@ class GrandPrix: Rally
     
     func run(turn: Int){
         var proceed = true
+        print("\n****************************************\n")
+        print("Test part 2")
+          print("\n****************************************\n")
         for index in 0...rallyVehicles.count-1
         {
             if(index != rallyVehicles.count-1)
@@ -68,7 +71,9 @@ class GrandPrix: Rally
                 }
                 
                                                         //prints the winner of the race
-                
+                 print("\n****************************************\n")
+                print("Test Part 3")
+                  print("\n****************************************\n")
                 print("The winner of the Grand Prix is:")
                 bestVehicle.showData()
             }
@@ -76,6 +81,9 @@ class GrandPrix: Rally
                                                         //if no vehicle completed the race then it willdisplay the following message
                 
             {
+               print("\n****************************************\n")
+                print("Test part 3")
+                print("\n****************************************\n")
                 print("All the vehicles failed to finish the rally")
             }
         }
