@@ -1,31 +1,41 @@
-//
-//  Car.swift
-//  Rally
-//
-//  Created by JASI on 23/10/19.
-//  Copyright © 2019 JASI. All rights reserved.
-//
-
 import Foundation
 
+                                                            //class Car extending Vehicle class
+
 class Car: Vehicle{
-    var category: String
     
-    init(category: String){
+                                                            //data member
+    
+    var category: String
+
+                                                            //parameterized initializer
+    
+    init(category: String)
+    {
         self.category = category
-        super.init()
+        super.init()                                        //calling the superclass initializer
     }
     
-    init(category: String, name: String,maxSpeed: Double,weight: Int, fuelLevel:Int) {
+                                                            //parameterized initializer
+    
+    init(category: String, name: String,maxSpeed: Double,weight: Int, fuelLevel:Int)
+    {
         self.category = category
+                                                            //calling the superclass initializer
         super.init(name: name, maxSpeed: maxSpeed, weight: weight, fuelLevel: fuelLevel)
     }
     
-    func getCategory() -> String{
+                                                            //getter
+    
+    func getCategory() -> String
+    {
         return category
     }
     
-    func showCarData(){
+                                                            //method to display the deatils of car 
+    
+    func showCarData()
+    {
         print("\(self.name) -> speed max = \(self.maxSpeed) km/h, weight = \(self.weight) kg, car category = \(self.category)")
     }
     
