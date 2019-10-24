@@ -1,37 +1,43 @@
-//
-//  Moto.swift
-//  Rally
-//
-//  Created by JASI on 23/10/19.
-//  Copyright © 2019 JASI. All rights reserved.
-//
-
 import Foundation
 
+                                                                    //class Car extending Vehicle class
 
-class Moto: Vehicle{
+class Moto: Vehicle
+{
+                                                                    //data member
+    
     var hasSideCar = false
     
-    init(hasSideCar: Bool){
+                                                                   //parameterized initializer
+    
+    init(hasSideCar: Bool)
+    {
         self.hasSideCar = hasSideCar
-        super.init()
+        super.init()                                                //calling the superclass initializer
     }
     
-    init(hasSideCar: Bool, name: String,maxSpeed: Double,weight: Int, fuelLevel:Int) {
+                                                                    //parameterized initializer
+    
+    init(hasSideCar: Bool, name: String,maxSpeed: Double,weight: Int, fuelLevel:Int)
+    {
         self.hasSideCar = hasSideCar
+                                                                    //calling the superclass initializer
         super.init(name: name, maxSpeed: maxSpeed, weight: weight, fuelLevel: fuelLevel)
     }
     
-    //Method to display Moto data in required format depending on whether it has side car or not
-    func showMotoData(){
-        if hasSideCar{
+                                                                    //Method to display Moto data in required format depending on whether it has side car or not
+    
+    func showMotoData()
+    {
+        if hasSideCar
+        {
             print("\(self.name) -> speed max = \(self.maxSpeed) km/h, weight = \(self.weight) kg, Moto, with sidecar")
         }
-        else{
+        else
+        {
             print("\(self.name) -> speed max = \(self.maxSpeed) km/h, weight = \(self.weight) kg, Moto")
         }
     }
-    
-    
-    
 }
+
+                                                                    //End of Moto class
